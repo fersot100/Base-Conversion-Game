@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Base Conversion Game</title>
+	<link rel="stylesheet" type="text/css" href="css/material-icons.css"/>
+	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+	<link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+<div class="container">
+	<div class="form">
+		<h3 id="problem">Click New Question to Start</h3>
+		<input autofocus="true" type="text" placeholder="Answer" id="inputField"></input>
+		<button id="submitButton">Submit</button>
+		<button id="newQuestion">New Question</button>
+	</div>
+	<div class="row">
+		<div class="col s9 to">
+			<h4>From</h4>
+			<input type="checkbox" checked="true" class="box" id="f0">
+			<label for="f0">Binary</label><br>
+			<input type="checkbox" checked="true" class="box" id="f1">
+			<label for="f1">Octal</label><br>
+			<input type="checkbox" checked="true" class="box" id="f2">
+			<label for="f2">Decimal</label><br>
+			<input type="checkbox" checked="true" class="box" id="f3">
+			<label for="f3">Hexadecimal</label><br>
+		</div>
+		<div class="col s3 from">
+			<h4>To</h4>
+			<input type="checkbox" checked="true" class="box" id="t0">
+			<label for="t0">Binary</label><br>
+			<input type="checkbox" checked="true" class="box" id="t1">
+			<label for="t1">Octal</label><br>
+			<input type="checkbox" checked="true" class="box" id="t2">
+			<label for="t2">Decimal</label><br>
+			<input type="checkbox" checked="true" class="box" id="t3">
+			<label for="t3">Hexadecimal</label><br>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.js"></script>
+<script type="text/javascript">
+	require('./renderer.js');
+</script>
+</body>
+</html>
